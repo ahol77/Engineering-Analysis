@@ -35,11 +35,13 @@ counts,xbins,ybins,image = plt.hist2d(x,y,bins=25
 plt.colorbar()
 plt.xlabel('x')
 plt.ylabel('y')
+plt.title("Histogram of Point Density",fontsize=12)
 plt.subplot(122)
 plt.contour(counts.transpose(),extent=[xbins[0],xbins[-1],ybins[0],ybins[-1]],
     linewidths=3, cmap = plt.cm.rainbow, levels = [1,5,10,25,50,70,80,100])
 plt.xlabel('x')
 plt.ylabel('y')
+plt.title("Contour Map of Point Density",fontsize=12)
 cbar = plt.colorbar()
 cbar.ax.set_ylabel('Counts')
 plt.subplots_adjust(wspace=.5)
