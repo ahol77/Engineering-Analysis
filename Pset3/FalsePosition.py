@@ -84,7 +84,7 @@ def manyintervals(a,b,f,derivf,err,inte):
         minimum=minimum+intsize
         maximum=maximum+intsize
         loopend=loopend+1
-    print(rootlist, multiroot, iteration)
+    return rootlist
             
 #manyintervals(1.5,2.5,f1,derivf1,0.0001,10) #root = 2.3467, iterations = 4
     #This sped up the iterations slightly
